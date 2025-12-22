@@ -7,6 +7,7 @@ It is used to interact with CouchDB databases.
 #### Composer Package 
 
 `kipchak/driver-couchdb`
+
 #### Driver Name
 
 `database.couchdb.__connection_name__`
