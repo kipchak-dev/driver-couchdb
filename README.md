@@ -67,7 +67,7 @@ focus on building their applications rather than dealing with the complexities o
 
 Drivers were introduced as a part of the Kipchak 2.0 release.
 
-Drivers are basically Slim Dependecies injected into Kipchak's Service Container.
+Drivers are basically Slim Dependencies injected into Kipchak's Service Container.
 
 ## How do Kipchak Drivers work?
 
