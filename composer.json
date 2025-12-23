@@ -21,7 +21,7 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "mamluk/couchdb": "^0.7.0",
+        "mamluk/couchdb": "^0.8",
         "kipchak/core": "2.x-dev"
     }
 }

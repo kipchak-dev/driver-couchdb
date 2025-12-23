@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0e5383eb6088a8b839d48d1fb1f1c8a8",
+    "content-hash": "3c4e65bb019f8293029048b043bb94b5",
     "packages": [
         {
             "name": "carbonphp/carbon-doctrine-types",
@@ -2025,7 +2025,7 @@
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/core",
-                "reference": "4080ea2ebbfc9156fb4dc5b372ada1493d6d914b"
+                "reference": "e8cab7b34e03371c7c04aa617e623990120df162"
             },
             "require": {
                 "cuyz/valinor": "^1.17",
@@ -2061,7 +2061,7 @@
                 "apis",
                 "microservices"
             ],
-            "time": "2025-12-23T10:00:48+00:00"
+            "time": "2025-12-23T10:52:09+00:00"
         },
         {
             "name": "kipchak/driver-config",
@@ -2069,7 +2069,7 @@
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/drivers/config",
-                "reference": "6e066046d7be5b1f1c8728c5695e6df3f31ab7ad"
+                "reference": "70fe56b22d2c84d1ee5fdb72f593a9ac5aaa6502"
             },
             "require": {
                 "kipchak/core": "2.x-dev"
@@ -2094,7 +2094,7 @@
                 "http",
                 "microservices"
             ],
-            "time": "2025-12-23T10:04:30+00:00"
+            "time": "2025-12-23T10:13:56+00:00"
         },
         {
             "name": "kipchak/driver-filecache",
@@ -2102,7 +2102,7 @@
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/drivers/filecache",
-                "reference": "186f908a2fdfc368c6117a7dba46fd956d8e7166"
+                "reference": "c80c19cd7d38631a18f7b6b4fd5b0abf09b01523"
             },
             "require": {
                 "kipchak/core": "2.x-dev",
@@ -2112,7 +2112,7 @@
             "type": "dependency",
             "autoload": {
                 "psr-4": {
-                    "Mamluk\\Kipchak\\Driver\\Filecache\\": "src/"
+                    "Kipchak\\Driver\\Filecache\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -2128,7 +2128,7 @@
                 "http",
                 "microservices"
             ],
-            "time": "2025-12-23T09:24:48+00:00"
+            "time": "2025-12-23T10:13:00+00:00"
         },
         {
             "name": "laravel/serializable-closure",
@@ -2193,11 +2193,11 @@
         },
         {
             "name": "mamluk/couchdb",
-            "version": "0.7",
+            "version": "0.8",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/couchdb.git",
-                "reference": "4d4e250bcf6cc8d7d524d77eeffcd69d4029b033"
+                "reference": "641aeee5e2b197111c4c85eb6c4a0364f7492142"
             },
             "require": {
                 "guzzlehttp/guzzle": "^7.10",
@@ -2219,7 +2219,7 @@
                 "MIT"
             ],
             "description": "A CouchDB Client and SessionHandler",
-            "time": "2025-10-13T12:05:57+00:00"
+            "time": "2025-12-23T11:07:24+00:00"
         },
         {
             "name": "monolog/monolog",
