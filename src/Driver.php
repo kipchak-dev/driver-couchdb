@@ -23,7 +23,7 @@ class Driver implements Interfaces\Driver
             $logger = self::$container->get('logger');
             $httpClient = self::$container->get('http.client');
             foreach($connections as $connectionName => $connectionDetails) {
-                self::$container->set('database.couchdb.' . $connectionName, function (ContainerInterface $c) use ($connectionDetails, $httpClient, $logger): Client {
+                self::$container->set('drivers.database.couchdb.' . $connectionName, function (ContainerInterface $c) use ($connectionDetails, $httpClient, $logger): Client {
                     return new Client($connectionDetails['username'], $connectionDetails['password'],
                         $connectionDetails['database'], $connectionDetails['host'], $logger,
                         $httpClient, $connectionDetails['port']);
@@ -34,7 +34,7 @@ class Driver implements Interfaces\Driver
 
     public static function get(?string $configKey = null): Client
     {
-        return self::$container->get('database.couchdb.' . $configKey ?? 'default');
+        return self::$container->get('drivers.database.couchdb.' . $configKey ?? 'default');
     }
 
 }
