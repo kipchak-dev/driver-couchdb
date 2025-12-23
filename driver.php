@@ -1,7 +1,7 @@
 <?php
 
 use Psr\Container\ContainerInterface;
-use Mamluk\Kipchak\Driver\CouchDB\Driver;
+use Kipchak\Driver\CouchDB\Driver;
 
 /**
  * @var $container ContainerInterface
