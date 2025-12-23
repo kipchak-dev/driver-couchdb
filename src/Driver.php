@@ -1,12 +1,12 @@
 <?php
 
-namespace Mamluk\Kipchak\Driver\CouchDB;
+namespace Kipchak\Driver\CouchDB;
 
 use Illuminate\Http\Client\Factory;
-use Mamluk\Kipchak\Interfaces;
+use Kipchak\Core\Interfaces;
 use Psr\Container\ContainerInterface;
 use Mamluk\Couch\Database\Client;
-use Mamluk\Kipchak\Driver\Config\Driver as Config;
+use Kipchak\Driver\Config\Driver as Config;
 
 class Driver implements Interfaces\Driver
 {
