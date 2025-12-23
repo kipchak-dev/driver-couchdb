@@ -15,12 +15,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Mamluk\\Kipchak\\Middleware\\CouchDB\\": "src/"
+            "Mamluk\\Kipchak\\Driver\\CouchDB\\": "src/"
         }
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "mamluk/couchdb": "^0.7.0"
+        "mamluk/couchdb": "^0.7.0",
+        "kipchak/core": "2.x-dev"
     }
 }
