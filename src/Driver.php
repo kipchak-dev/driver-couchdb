@@ -21,7 +21,7 @@ class Driver implements Interfaces\Driver
     {
         if (isset(Config::get('kipchak.couchdb')['connections']) && Config::get('kipchak.couchdb')['enabled']) {
             $connections = Config::get('kipchak.couchdb')['connections'];
-            $logger = self::$container->get('driver.logger');
+            $logger = self::$container->get('drivers.logger');
             $httpClient = new Factory();
             foreach($connections as $connectionName => $connectionDetails) {
                 self::$container->set('drivers.database.couchdb.' . $connectionName, function (ContainerInterface $c) use ($connectionDetails, $httpClient, $logger): Client {
