@@ -2,6 +2,7 @@
 
 namespace Mamluk\Kipchak\Driver\CouchDB;
 
+use Illuminate\Http\Client\Factory;
 use Mamluk\Kipchak\Interfaces;
 use Psr\Container\ContainerInterface;
 use Mamluk\Couch\Database\Client;
@@ -21,7 +22,7 @@ class Driver implements Interfaces\Driver
         if (isset(Config::get('kipchak.couchdb')['connections']) && Config::get('kipchak.couchdb')['enabled']) {
             $connections = Config::get('kipchak.couchdb')['connections'];
             $logger = self::$container->get('driver.logger');
-            $httpClient = self::$container->get('driver.http');
+            $httpClient = new Factory();
             foreach($connections as $connectionName => $connectionDetails) {
                 self::$container->set('drivers.database.couchdb.' . $connectionName, function (ContainerInterface $c) use ($connectionDetails, $httpClient, $logger): Client {
                     return new Client($connectionDetails['username'], $connectionDetails['password'],
