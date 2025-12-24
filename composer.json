@@ -22,6 +22,7 @@
     "prefer-stable": true,
     "require": {
         "mamluk/couchdb": "^0.8",
-        "kipchak/core": "2.x-dev"
+        "kipchak/core": "2.x-dev",
+        "kipchak/driver-logger": "dev-master"
     }
 }

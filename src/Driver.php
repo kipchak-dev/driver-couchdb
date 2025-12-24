@@ -7,6 +7,7 @@ use Kipchak\Core\Interfaces;
 use Psr\Container\ContainerInterface;
 use Mamluk\Couch\Database\Client;
 use Kipchak\Driver\Config\Driver as Config;
+use Kipchak\Driver\Logger\Driver as Logger;
 
 class Driver implements Interfaces\Driver
 {
@@ -21,7 +22,7 @@ class Driver implements Interfaces\Driver
     {
         if (isset(Config::get('kipchak.couchdb')['connections']) && Config::get('kipchak.couchdb')['enabled']) {
             $connections = Config::get('kipchak.couchdb')['connections'];
-            $logger = self::$container->get('drivers.logger');
+            $logger = Logger::get();
             $httpClient = new Factory();
             foreach($connections as $connectionName => $connectionDetails) {
                 self::$container->set('drivers.database.couchdb.' . $connectionName, function (ContainerInterface $c) use ($connectionDetails, $httpClient, $logger): Client {
