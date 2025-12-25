@@ -6,8 +6,8 @@ use Illuminate\Http\Client\Factory;
 use Kipchak\Core\Interfaces;
 use Psr\Container\ContainerInterface;
 use Mamluk\Couch\Database\Client;
-use Kipchak\Driver\Config\Driver as Config;
-use Kipchak\Driver\Logger\Driver as Logger;
+use Kipchak\Driver\Config\Config;
+use Kipchak\Driver\Logger\Logger;
 
 class CouchDB implements Interfaces\Driver
 {
