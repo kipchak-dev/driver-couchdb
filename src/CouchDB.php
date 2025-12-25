@@ -9,7 +9,7 @@ use Mamluk\Couch\Database\Client;
 use Kipchak\Driver\Config\Driver as Config;
 use Kipchak\Driver\Logger\Driver as Logger;
 
-class Driver implements Interfaces\Driver
+class CouchDB implements Interfaces\Driver
 {
     protected static ContainerInterface $container;
 
