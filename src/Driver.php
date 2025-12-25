@@ -13,16 +13,17 @@ class Driver implements Interfaces\Driver
 {
     protected static ContainerInterface $container;
 
-    public static function initialise(ContainerInterface $container): void
+    public static function initialise(ContainerInterface $container, ?string $configFileName = null): void
     {
         self::$container = $container;
-        self::set();
+        self::set($configFileName);
     }
 
-    public static function set(): void
+    public static function set(?string $configFileName = null): void
     {
-        if (isset(Config::get('kipchak.couchdb')['connections']) && Config::get('kipchak.couchdb')['enabled']) {
-            $connections = Config::get('kipchak.couchdb')['connections'];
+        $configFileName = $configFileName ?? 'kipchak.couchdb';
+        if (isset(Config::get($configFileName)['connections']) && Config::get($configFileName)['enabled']) {
+            $connections = Config::get($configFileName)['connections'];
             $logger = Logger::get();
             $httpClient = new Factory();
             foreach($connections as $connectionName => $connectionDetails) {
