@@ -1,6 +1,6 @@
 # CouchDB Driver for Kipchak
 
-This is a CouchDB driver for Kipchak. It's based on the `mamluk/couchdb` package at https://1x.ax/mamluk/couchdb.
+This driver is based on the [PHP CouchDB library](https://1x.ax/mamluk/couchdb) from [Mamluk](https://mamluk.net).
 
 It supports multiple CouchDB connections.
 
