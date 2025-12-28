@@ -43,7 +43,7 @@ Install it via composer: `composer require kipchak/driver-couchdb`.
 
 ```php
 // Load the HTTP driver.
-$couchdb = \Mamluk\Kipchak\Driver\CouchDB\CouchDB::get('default'); // default is a connection name defined in the config file.
+$couchdb = Kipchak\Driver\CouchDB\CouchDB::get('default'); // default is a connection name defined in the config file.
 // Use the $couchdb client as you would the mamluk/couchdb client.
 ```
 
