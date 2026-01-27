@@ -3,7 +3,6 @@
 use function Kipchak\Core\env;
 
 return [
-    'enabled' => true,
     'connections' => [
         'default' => [
             'host' => env('COUCHDB_HOST', 'http://couchdb'), # No trailing slash, please.

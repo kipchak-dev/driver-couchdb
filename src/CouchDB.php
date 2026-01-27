@@ -22,7 +22,7 @@ class CouchDB implements Interfaces\Driver
     public static function set(?string $configFileName = null): void
     {
         $configFileName = $configFileName ?? 'kipchak.couchdb';
-        if (isset(Config::get($configFileName)['connections']) && Config::get($configFileName)['enabled']) {
+        if (isset(Config::get($configFileName)['connections'])) {
             $connections = Config::get($configFileName)['connections'];
             $logger = Logger::get();
             $httpClient = new Factory();
