@@ -24,5 +24,19 @@
         "mamluk/couchdb": "^0.10",
         "kipchak/core": "^2 || ^3",
         "kipchak/driver-logger": "^1"
+    },
+    "extra": {
+        "kipchak": {
+            "type": "driver",
+            "config": "sample.config.php",
+            "configName": "kipchak.couchdb.php",
+            "initialise": "\\Kipchak\\Driver\\CouchDB\\CouchDB::initialise($container);",
+            "after": [
+                "kipchak/driver-config",
+                "kipchak/driver-logger"
+            ],
+            "before": [],
+            "docs": "https://kipchak.dev/docs/driver-couchdb"
+        }
     }
 }
